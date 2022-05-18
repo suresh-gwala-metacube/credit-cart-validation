@@ -1,0 +1,44 @@
+/* optional */
+li {
+line-height: 2; 
+}
+
+.shell {
+position: relative;
+line-height: 1; 
+width:100%;
+}
+.shell span {
+  position: absolute;
+  padding-left: 17px;
+  top: 21px;
+  color: #ccc;
+  pointer-events: none;
+  z-index: -1;
+}
+.shell span i {
+  font-style: normal;
+  /* any of these 3 will work */
+  color: transparent;
+  opacity: 0;
+  visibility: hidden; 
+}
+
+input.masked, .shell span {
+  font-size: 18px;
+  padding-right: 8px;
+  background-color: transparent;
+  text-transform: uppercase; 
+  cursor: pointer;
+}
+.shell span {
+  color: #423c3c;
+  font-weight: 600;
+}
+.error .shell span {
+  padding-left: 20px;
+}
+.success .shell span {
+    padding-left: 18px;
+}
+

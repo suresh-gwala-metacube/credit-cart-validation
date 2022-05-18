@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<script src="js/external-js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/external-css/masking-input.css"/>
+</head>
+<body>
+<form class="credit-card">
+  <div class="form-header">
+    <h4 class="title">Credit card detail</h4>
+  </div>
+  <div class="form-body">
+    <!-- Card Number Section -->
+	<div id="card-section">
+	<input type="tel" id="cc"  name="ccnumber" autocomplete="off" onkeypress="return onlyNumberKey(event)" onkeyup='checkCardNumber(event)' placeholder="0000 0000 0000 0000" pattern="\d{4} \d{4} \d{4} \d{4}" class="card-number masked">	
+  <i id="faIcons" class="fa" onclick="resetValue()"></i>
+	</div>
+	<div id="status"></div>
+  </div>
+</form>
+</body>
+</html>
+<!---Added custom javascript code--->
+<script src="js/external-js/masking-input.js" data-autoinit="true"></script>
+<script src="js/custom.js"></script>

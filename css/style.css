@@ -1,0 +1,112 @@
+/* Global */
+* {
+box-sizing: border-box;
+}
+
+body,html {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	font-family: 'Roboto',
+	sans-serif;
+	margin: 0;
+	background-color: #ffffff;
+}
+
+.form-header {
+	height: 60px;
+	padding: 20px 30px 0;
+	border-bottom: 1px solid #e1e8ee;
+}
+
+.form-body {
+	height: 240px;
+	padding: 30px 30px 20px;
+}
+
+/* Title */
+.title {
+	font-size: 18px;
+	margin: 0;
+	color: #5e6977;
+}
+
+
+/* Common */
+
+div#card-section {
+	display: flex;
+	background: rgba(255,255,255,.5);
+}
+
+.fa-lg {
+    font-size: 1.73333333em;
+    height: 38px;
+    position: relative;
+    right: 36px;
+    top: 21px;
+    color: rgba(0,0,0,0.4);
+}
+/* Card Section */
+.card-number {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 14px;
+	opacity: .7;
+	color: #000000;
+	width: 100%;
+    padding: 20px 20px 20px;
+	border: 2px solid #e1e8ee;
+	border-radius: 6px;
+    border: none !important;
+	padding-left: 20px;
+}
+
+.credit-card {
+	width: 60%;
+	height: 250px;
+	margin: 60px auto 0;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background-color: #dedede82;
+	box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+}
+div#card-section{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+	border-image-source: linear-gradient(to left, #6addfb, #f363bf);
+}
+
+#card-section.error{
+	border-width: 3px;
+	border-style: solid;
+    border-image-slice: 1;
+	border-image: linear-gradient(to right, #db1313, #e79ccc) 1;
+}
+
+#card-section.success{
+	border-width: 3px;
+	border-style: solid;
+    border-image-slice: 1;
+	border-image: linear-gradient(to left, #6addfb, #f363bf) 1;
+	outline:none;
+}
+
+.card-number.error:focus-visible,input:focus,input:focus-visible{
+	outline:none;
+}
+
+.card-number.success:focus-visible,input:focus,input:focus-visible{
+	outline:none;
+}
+
+div#status {
+    color: #f10e0e;
+    margin: 5px 0px 30px 10px
+}
+div#status.success {
+    color: #008000;
+}
